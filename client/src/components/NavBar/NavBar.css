@@ -12,8 +12,37 @@
 }
 
 .logo-nav {
-  height: 6rem;
+  height: 8rem;
   display: block;
   margin: auto;
   margin-bottom: 0.5rem;
+}
+
+.nav-items:hover {
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 464px) {
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-items {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+  }
+  .logo-nav {
+    height: 5rem;
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .logo-nav {
+    height: 9rem;
+  }
+  .nav-items {
+    font-size: 1.5rem;
+  }
 }
