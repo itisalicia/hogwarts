@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <header>
-        <h1 className="logo">JS Monorepo</h1>
+        <h1 className="logo">Tentative</h1>
       </header>
     </>
   );
