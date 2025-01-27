@@ -1,0 +1,19 @@
+.nav {
+  background-color: transparent;
+  color: black;
+  padding: 20px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 1.2rem;
+}
+
+.logo-nav {
+  height: 6rem;
+  display: block;
+  margin: auto;
+  margin-bottom: 0.5rem;
+}
