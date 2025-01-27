@@ -5,7 +5,9 @@ function NavBar() {
   return (
     <header className="nav-container">
       <nav className="nav">
-        <img src="./logo.png" alt="hogwarts logo" className="logo-nav" />
+        <Link to="/">
+          <img src="./logo.png" alt="hogwarts logo" className="logo-nav" />
+        </Link>
         <ul className="nav-list">
           <Link to="/">
             <li className="nav-items">Accueil</li>
