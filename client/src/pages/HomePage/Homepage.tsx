@@ -64,7 +64,7 @@ function Homepage() {
           légilimancie, d'occlumancie, de magie noire, de magie blanche, de
           magie élémentaire, de magie des potions, de magie des runes, de magie
           des sortilèges, de magie des créatures, de magie des plantes, de magie
-          des objets.
+          des objets !
         </p>
       </section>
       <section className="homepage-card-container">
