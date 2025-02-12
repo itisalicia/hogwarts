@@ -8,3 +8,45 @@
   width: 100%;
   height: 43rem;
 }
+
+.hogwarts-details-container {
+  width: 50%;
+  line-height: 1.7;
+  display: block;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.homepage-cards {
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 90%;
+  margin: 5rem;
+  padding: 2rem;
+}
+
+.homepage-card-img {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 15px;
+  margin-right: 2rem;
+}
+
+.homepage-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.homepage-card-button {
+  margin-top: 5rem;
+  display: flex;
+  justify-self: center;
+  padding: 1rem;
+  border-radius: 15px;
+}
+.homepage-card-button:hover {
+  cursor: pointer;
+}
