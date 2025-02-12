@@ -1,0 +1,39 @@
+.houses-title {
+  text-align: center;
+  margin: 5rem;
+}
+
+.house-card {
+  border: 1px solid black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  margin: 3rem;
+  background-color: white !important;
+}
+
+.house-card:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.house-card-img {
+  width: 15rem;
+  margin: 1rem;
+}
+
+.house-card-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 1rem;
+  background-color: transparent;
+}
+
+.house-name,
+.house-traits,
+.house-founder,
+.house-description,
+u {
+  background-color: transparent;
+}
