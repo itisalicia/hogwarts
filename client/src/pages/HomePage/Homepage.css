@@ -17,6 +17,10 @@
   margin-top: 5rem;
 }
 
+.homepage-card-description {
+  margin-bottom: 5rem;
+}
+
 .homepage-cards {
   display: flex;
   align-items: center;
@@ -38,15 +42,35 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 5rem;
 }
 
 .homepage-card-button {
-  margin-top: 5rem;
-  display: flex;
-  justify-self: center;
-  padding: 1rem;
-  border-radius: 15px;
+  background-image: linear-gradient(
+    to right,
+    #fceabb 0%,
+    #f8b500 51%,
+    #fceabb 100%
+  );
+  border-color: #e6e6de;
 }
+.homepage-card-button {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 15px;
+  display: block;
+  margin: auto;
+}
+
 .homepage-card-button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
   cursor: pointer;
 }
