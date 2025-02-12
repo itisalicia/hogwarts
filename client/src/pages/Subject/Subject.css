@@ -1,0 +1,22 @@
+.main-title-subjects {
+  text-align: center;
+  margin: 5rem;
+}
+
+.second-title-subjects {
+  text-align: center;
+  margin: 2rem;
+}
+
+.subject-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8rem;
+}
+
+.subject-img {
+  width: 3rem;
+  display: flex;
+  justify-self: center;
+}
