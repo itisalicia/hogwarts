@@ -43,3 +43,51 @@
 u {
   background-color: transparent;
 }
+
+@media only screen and (max-width: 464px) {
+  .house-card {
+    flex-direction: column;
+    font-size: 1.3rem;
+    width: 90%;
+  }
+  .house-name {
+    text-align: center;
+    margin: 1rem;
+  }
+  .house-name,
+  .house-traits,
+  .house-founder,
+  .house-description,
+  u {
+    line-height: 2rem;
+    margin: 1.7rem;
+  }
+  .house-card-img {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .house-card-img {
+    display: block;
+    margin: auto;
+    width: 18rem;
+  }
+  .house-card {
+    flex-direction: column;
+    font-size: 1.3rem;
+  }
+  .house-name {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2.5rem;
+  }
+  .house-traits,
+  .house-founder,
+  .house-description,
+  u {
+    font-size: 1.7rem;
+    margin: 2rem;
+  }
+}
