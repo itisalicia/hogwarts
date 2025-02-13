@@ -17,8 +17,19 @@
   margin-top: 5rem;
 }
 
+.homepage-card-description {
+  margin-bottom: 5rem;
+}
+
+.homepage-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .homepage-cards {
   display: flex;
+  /* flex-direction: column; */
   align-items: center;
   border: 2px solid black;
   border-radius: 15px;
@@ -35,18 +46,97 @@
 }
 
 .homepage-card-content {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
+  margin-bottom: 5rem;
 }
 
 .homepage-card-button {
-  margin-top: 5rem;
-  display: flex;
-  justify-self: center;
-  padding: 1rem;
-  border-radius: 15px;
+  background-image: linear-gradient(
+    to right,
+    #fceabb 0%,
+    #f8b500 51%,
+    #fceabb 100%
+  );
+  border-color: var(--primary-color);
 }
+.homepage-card-button {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 15px;
+  display: block;
+  margin: auto;
+}
+
 .homepage-card-button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 464px) {
+  .homepage-img-hogwarts {
+    height: 25rem;
+  }
+  .hogwarts-details-container {
+    width: 90%;
+    font-size: 1.3rem;
+  }
+  .homepage-cards {
+    align-items: flex-start;
+    padding: 1rem;
+    flex-direction: column;
+  }
+  .homepage-card-img {
+    width: 20rem;
+    height: 20rem;
+  }
+  .homepage-card-description {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .hogwarts-details-container {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+  .homepage-cards {
+    align-items: flex-start;
+    padding: 1rem;
+    flex-direction: column;
+  }
+  .homepage-card-img {
+    width: 25rem;
+    height: 25rem;
+    display: block;
+    margin: auto;
+  }
+  .homepage-card-description {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .homepage-card-button {
+    margin: 10px;
+    padding: 25px 55px;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+  }
 }
