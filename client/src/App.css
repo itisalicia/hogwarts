@@ -3,6 +3,7 @@
 :root {
   --font-family: "Montserrat", sans-serif;
   --primary-color: var(--primary-color);
+  --secondary-color: #18474e;
 }
 
 * {

@@ -2,7 +2,7 @@
 .second-title-subjects {
   text-align: center;
   margin: 5rem;
-  color: #e6c619;
+  color: var(--secondary-color);
 }
 
 .subject-container {
