@@ -2,6 +2,7 @@
 
 :root {
   --font-family: "Montserrat", sans-serif;
+  --primary-color: var(--primary-color);
 }
 
 * {
@@ -9,5 +10,5 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font-family);
-  background-color: #e6e6de;
+  background-color: var(--primary-color);
 }

@@ -13,6 +13,8 @@ function Subject() {
   const [subjects, setSubjects] = useState<Subject[]>([]);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+
     fetch(`${import.meta.env.VITE_API_URL}/api/subjects`)
       .then((response) => response.json())
       .then((data: Subject[]) => {
