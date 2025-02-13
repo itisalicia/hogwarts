@@ -3,11 +3,16 @@
   margin: 5rem;
 }
 
+.houses-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .house-card {
   border: 1px solid black;
   border-radius: 15px;
   display: flex;
-  flex-direction: row;
   margin: 3rem;
   background-color: white !important;
 }
@@ -20,6 +25,7 @@
 .house-card-img {
   width: 15rem;
   margin: 1rem;
+  border-radius: 15px;
 }
 
 .house-card-details {
@@ -27,7 +33,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   margin: 1rem;
-  background-color: transparent;
+  background-color: white !important;
 }
 
 .house-name,
