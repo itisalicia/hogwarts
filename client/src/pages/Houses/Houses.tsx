@@ -39,6 +39,9 @@ function Houses() {
                 <u>Fondateur</u>: {house.founder}
               </p>
               <p className="house-description">{house.description}</p>
+              <button type="button" className="house-card-button">
+                En découvrir plus
+              </button>
             </div>
           </article>
         ))}

@@ -22,6 +22,9 @@ import houseActions from "./modules/item/houses/houseActions";
 
 router.get("/api/houses", houseActions.browse);
 router.get("/api/houses/:id", houseActions.read);
+router.put("/api/houses/:id", houseActions.edit);
+router.post("/api/houses", houseActions.add);
+router.delete("/api/houses/:id", houseActions.destroy);
 
 /* ************************************************************************* */
 

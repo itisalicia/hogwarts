@@ -41,12 +41,12 @@ const homepagecards = [
 function Homepage() {
   return (
     <main className="homepage-container">
-      <h1 className="homepage-h1">Bienvenue à Poudlard !</h1>
       <img
         src="./imgHomePage/poudlard.webp"
         alt="Hogwarts by night"
         className="homepage-img-hogwarts"
       />
+      <h1 className="homepage-h1">Bienvenue à Poudlard !</h1>
       <section className="hogwarts-details-container">
         <p className="hogwarts-details">
           Poudlard est une école de sorcellerie située en Écosse. Elle est
