@@ -46,18 +46,15 @@
 }
 
 .homepage-card-content {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
   margin-bottom: 5rem;
 }
 
 .homepage-card-button {
   background-image: linear-gradient(
     to right,
-    #fceabb 0%,
-    #f8b500 51%,
-    #fceabb 100%
+    #3ca8b8 0%,
+    #18474e 51%,
+    #4996a2 100%
   );
   border-color: var(--primary-color);
 }

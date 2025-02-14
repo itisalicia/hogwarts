@@ -43,3 +43,78 @@
 u {
   background-color: transparent;
 }
+
+.house-card-button {
+  background-image: linear-gradient(
+    to right,
+    #3ca8b8 0%,
+    #18474e 51%,
+    #4996a2 100%
+  );
+  border-color: none;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 15px;
+  display: block;
+  margin: auto;
+}
+
+.house-card-button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 464px) {
+  .house-card {
+    flex-direction: column;
+    font-size: 1.3rem;
+    width: 90%;
+  }
+  .house-name {
+    text-align: center;
+    margin: 1rem;
+  }
+  .house-name,
+  .house-traits,
+  .house-founder,
+  .house-description,
+  u {
+    line-height: 2rem;
+    margin: 1.7rem;
+  }
+  .house-card-img {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .house-card-img {
+    display: block;
+    margin: auto;
+    width: 18rem;
+  }
+  .house-card {
+    flex-direction: column;
+    font-size: 1.3rem;
+  }
+  .house-name {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2.5rem;
+  }
+  .house-traits,
+  .house-founder,
+  .house-description,
+  u {
+    font-size: 1.7rem;
+    margin: 2rem;
+  }
+}

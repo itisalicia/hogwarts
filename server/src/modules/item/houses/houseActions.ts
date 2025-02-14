@@ -34,4 +34,55 @@ const read: RequestHandler = async (req, res, next) => {
   }
 };
 
-export default { browse, read };
+const add: RequestHandler = async (req, res, next) => {
+  try {
+    const newHouse = {
+      name: req.body.name,
+      img: req.body.img,
+      traits: req.body.traits,
+      founder: req.body.founder,
+      description: req.body.description,
+    };
+    const insertId = await HouseRepository.create(newHouse);
+
+    res.status(201).json({ insertId });
+  } catch (err) {
+    next(err);
+  }
+};
+
+const edit: RequestHandler = async (req, res, next) => {
+  try {
+    const house = {
+      id: Number(req.params.id),
+      name: req.body.name,
+      img: req.body.img,
+      traits: req.body.traits,
+      founder: req.body.founder,
+      description: req.body.description,
+    };
+
+    const affectedRows = await HouseRepository.update(house);
+
+    if (affectedRows === 0) {
+      res.sendStatus(404);
+    } else {
+      res.sendStatus(204);
+    }
+  } catch (err) {
+    next(err);
+  }
+};
+
+const destroy: RequestHandler = async (req, res, next) => {
+  try {
+    const houseId = Number(req.params.id);
+
+    await HouseRepository.delete(houseId);
+    res.sendStatus(204);
+  } catch (err) {
+    next(err);
+  }
+};
+
+export default { browse, read, add, edit, destroy };

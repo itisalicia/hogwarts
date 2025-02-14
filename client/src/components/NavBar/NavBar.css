@@ -1,7 +1,15 @@
 .nav {
-  background-color: transparent;
+  background-color: #18474e;
   color: black;
   padding: 20px;
+}
+
+a {
+  color: white;
+}
+
+a:visited {
+  color: white;
 }
 
 .nav-list {
@@ -33,18 +41,18 @@ a {
   .nav-list {
     display: flex;
     flex-direction: column;
+    text-align: left;
   }
   .nav-items {
     margin-top: 1rem;
     font-size: 1.4rem;
   }
   .logo-nav {
-    height: 5rem;
-    text-align: right;
+    height: 8rem;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media (min-width: 760px) and (max-width: 1024px) {
   .logo-nav {
     height: 9rem;
   }
