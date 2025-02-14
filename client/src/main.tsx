@@ -6,6 +6,9 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 /* ************************************************************************* */
 
 import App from "./App";
+import DeleteHouse from "./pages/Admin/House/DeleteHouse";
+import Admin from "./pages/Admin/House/NewHouse";
+import NewHouse from "./pages/Admin/House/NewHouse";
 import Homepage from "./pages/HomePage/Homepage";
 import Houses from "./pages/Houses/Houses";
 import Subject from "./pages/Subject/Subject";
@@ -27,6 +30,18 @@ const router = createBrowserRouter([
       {
         path: "/houses",
         element: <Houses />,
+      },
+      {
+        path: "/admin",
+        element: <Admin />,
+      },
+      {
+        path: "/admin/new",
+        element: <NewHouse />,
+      },
+      {
+        path: "/admin/house/:id/delete",
+        element: <DeleteHouse />,
       },
     ],
   },
